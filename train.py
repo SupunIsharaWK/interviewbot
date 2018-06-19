@@ -17,7 +17,7 @@ def load_pickle(filepath):
     data = pickle._Unpickler(documents_f)
     data.encoding = 'latin1'
     data2 = data.load()
-    print(data2)
+#   print(data2)
     documents_f.close()
 
     return data2
