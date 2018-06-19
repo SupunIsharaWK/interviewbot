@@ -40,7 +40,7 @@ assert len(vocab2int) == len(int2vocab)
 # # Set the Hyperparameters
 # ==============================================================================
 epochs = 100
-batch_size = 128
+batch_size = 30
 rnn_size = 512
 num_layers = 2
 learning_rate = 0.005
