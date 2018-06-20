@@ -17,6 +17,7 @@ def load_pickle(filepath):
     data = pickle._Unpickler(documents_f)
     data.encoding = 'latin1'
     data2 = data.load()
+    print(data2)
     documents_f.close()
 
     return data2
@@ -39,8 +40,8 @@ assert len(vocab2int) == len(int2vocab)
 # # Set the Hyperparameters
 # ==============================================================================
 epochs = 100
-batch_size = 30
-rnn_size = 512
+batch_size = 20
+rnn_size = 400
 num_layers = 2
 learning_rate = 0.005
 keep_probability = 0.8
